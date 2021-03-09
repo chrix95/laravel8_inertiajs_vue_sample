@@ -1,15 +1,19 @@
 <template>
-    <div>
-        This is the welcome page {{ `${lname}, ${fname}` }}
-    </div>
+  <layout title="Welcome">
+    <p>This is Dashboard, welcome {{ `${lname}, ${fname}` }}!</p>
+  </layout>
 </template>
 
 <script>
-    export default {
-        props: ['fname', 'lname', 'age']
-    }
+  import Layout from '../../Shared/Layout'
+
+  export default {
+    components: {
+      Layout,
+    },
+    props: {
+      fname: String,
+      lname: String
+    },
+  }
 </script>
-
-<style scoped>
-
-</style>

@@ -2,6 +2,7 @@ import { App, plugin } from '@inertiajs/inertia-vue'
 import Vue from 'vue'
 
 Vue.use(plugin)
+require('bootstrap')
 
 const el = document.getElementById('app')
 
