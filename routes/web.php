@@ -12,3 +12,21 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 Auth::routes(['register' => false]);
+
+// Route::get('/test', function () {
+//     $numbers = range(1, 100);
+//     foreach ($numbers as $value) {
+//         if ($value % 3 == 0 && $value % 5 == 0) {
+//             echo "FizzBuzz<br>";
+//         } else if ($value % 3 == 0) {
+//             echo "Fizz<br>";
+//         } else if ($value % 5 == 0) {
+//             echo "Buzz<br>";
+//         } else {
+//             echo $value . "<br>";
+//         }
+//     }
+// });
+Route::get('/test', function () {
+    return view('test');
+});
